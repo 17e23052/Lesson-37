@@ -16,5 +16,9 @@ print("Enter the text to encrypt:")
 text = input().upper()
 text2 = ""
 for letter in text:
- text2 = text2 + caesar[letter]
+ try:
+  text2 = text2 + caesar[letter]
+ except:
+   text2 = text2 + letter
+print("Encrypted text:")
 print(text2)
